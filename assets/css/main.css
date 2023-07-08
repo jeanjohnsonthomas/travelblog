@@ -3074,7 +3074,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(53, 56, 73, 0.95);
+		background-color: rgba(0, 0, 0, 0.95);
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -4154,11 +4154,47 @@ input, select, textarea {
 	}
 
 
-	.image-container {
+	/* .image-container {
 		max-width: 100%;
 		height: auto;
 	  }
 	  .image-container img {
 		width: 100%;
 		height: auto;
+	  } */
+
+	  .image-container {
+		position: relative;
+		overflow: hidden;
+		max-width: 100%;
+		height: auto;
 	  }
+	  
+	  .image-container::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		background-color: rgba(0, 0, 0, 0.5);
+		opacity: 0;
+		transition: opacity 0.3s;
+	  }
+	  
+	  .image-container:hover::before {
+		opacity: 1;
+	  }
+	  
+	  .image-container img {
+		width: 100%;
+		height: auto;
+		transition: transform 0.3s;
+	  }
+	  
+	  .image-container:hover img {
+		transform: scale(1.1);
+	  }
+	  
+
+	
