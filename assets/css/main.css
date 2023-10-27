@@ -4197,4 +4197,6 @@ input, select, textarea {
 	  }
 	  
 
-	
+.clickable-article {
+cursor: pointer;
+}

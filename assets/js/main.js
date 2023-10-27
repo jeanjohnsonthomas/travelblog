@@ -3,7 +3,16 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
+const clickableArticles = document.querySelectorAll('.clickable-article');
+				clickableArticles.forEach(article => {
+				  article.addEventListener('click', function() {
+					const link = article.getAttribute('data-href');
+					if (link) {
+					  window.location.href = link;
+					}
+				  });
+				});
+				
 (function($) {
 
 	var	$window = $(window),
