@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "4 STATES 4 DAYS",
+        "description": "An unforgettable journey through the enchanting landscapes of Kerala, Tamil Nadu, Andhra Pradesh, and Karnataka: A Bike Expedition to Treasure.",
+        "isCompleted": true,
+        "to_display": [2,3,4]
+    },
+    {
+        "id": 2,
+        "name": "Unveiling The Princess Of Hills",
+        "description": "Discovering the Hidden Charms of Uncharted Kodaikanal",
+        "isCompleted": true,
+        "to_display": [1,3,4]
+    },
+    {
+        "id": 3,
+        "name": "Monsoon adventures in Goa",
+        "description": "Getting to know the monsoon atmosphere and beauty of the party capital of India",
+        "isCompleted": true,
+        "to_display": [1,2,4]
+    },
+    {
+        "id": 4,
+        "name": "FORESTS, FLOWERS AND VILLAGE BEAUTY",
+        "description": "An expedition to encounter forest wildlife, vast flower fields and to enjoy the beauty of enchanting kollengode",
+        "isCompleted": false,
+        "to_display": [1,2,3]
+    }
+]
