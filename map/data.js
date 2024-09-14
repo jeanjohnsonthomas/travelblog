@@ -90,8 +90,12 @@ const locations = [
     { lat: 18.9219841, lng: 72.8320794, info: 'Gateway Of India Mumbai' },
     { lat: 10.1656234, lng: 77.2175243, info: 'Vattavada' },
     { lat: 9.6534759, lng: 76.9442903, info: 'Varattumedu, Vagamon' },
-    { lat: 11.2558234, lng: 75.7284119, info: 'Kozhikode' },
-    { lat: 11.3935712, lng: 75.7028934, info: 'Kapad Beach' },
+    { lat: 11.2507622, lng: 75.7789858, info: 'Kozhikode' },
+    { lat: 11.5376838, lng: 75.8939731, info: 'Kariyathumpara' },
+    { lat: 11.5353498, lng: 75.8736043, info: 'Thonikkadavu' },
+    { lat: 8.7607962, lng: 77.1053337, info: 'Ponmudi' },
+    { lat: 8.6163063, lng: 77.2357481, info: 'Agasthyamalai' },
+
 
 
     // Add more locations as needed
