@@ -1,0 +1,74 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffeff5;
+    overflow: hidden;
+}
+
+/* Container for centering content */
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Title styling */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff69b4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Gift image */
+.gift-img {
+    width: 250px; /* Make the gif larger */
+    height: auto; /* Maintain aspect ratio */
+    animation: bounce 1s ease infinite;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gift-img:hover {
+    transform: scale(1.1);
+}
+
+/* Button styles */
+.button {
+    padding: 15px 25px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(255, 105, 180, 0.3);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: #ff1493;
+}
+
+/* Animation for bouncing effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
