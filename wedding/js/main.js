@@ -3,16 +3,16 @@
 // ---- Edit these values to customize your site ----
 const WEDDING = {
   couple: "Jean Johnson & Lincy Merin Joy",
-  dateISO: "2026-12-12T16:00:00", // Local time on viewer device
+  dateISO: "2026-05-23T16:00:00", // Local time on viewer device
   city: "City, Country",
   ceremony: {
     name: "Ceremony Venue Name",
-    address: "123 Ceremony St, City, Country",
+    address: "Bishop Pereira Hall",
     time: "4:00 PM",
   },
   reception: {
     name: "Reception Venue Name",
-    address: "456 Reception Ave, City, Country",
+    address: "Dilash Wedding & Events Centre Attingal Alamcode",
     time: "6:30 PM",
   },
 };
