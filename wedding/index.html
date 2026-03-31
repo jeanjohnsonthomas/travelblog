@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="You're invited to our wedding." />
+
+    <title>Wedding Invitation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav-glass fixed-top">
+      <div class="container">
+        <a class="navbar-brand brand-mark" href="#top" aria-label="Go to top">
+          <span class="brand-initials">J</span><span class="brand-amp">&</span><span class="brand-initials">L</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+            <li class="nav-item"><a class="nav-link" href="#locations">Locations</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="top" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <p class="kicker mb-3">You’re invited</p>
+            <h1 class="display-title mb-3" data-couple>Jean Johnson &amp; Lincy Merin Joy</h1>
+            <p class="lead hero-lead mb-4">
+              We’re getting married — and we’d love to celebrate with you.
+            </p>
+
+            <div class="d-flex flex-wrap gap-2 gap-sm-3">
+              <a class="btn btn-primary btn-lg" href="#gallery">
+                <i class="fa-regular fa-images me-2"></i>View gallery
+              </a>
+              <a class="btn btn-outline-light btn-lg" href="#locations">
+                <i class="fa-solid fa-location-dot me-2"></i>See locations
+              </a>
+            </div>
+
+            <div class="hero-meta mt-4">
+              <div class="meta-pill">
+                <i class="fa-regular fa-calendar me-2"></i>
+                <span class="meta-label">Date</span>
+                <span class="meta-value" data-wedding-date>Saturday, 12 Dec 2026</span>
+              </div>
+              <div class="meta-pill">
+                <i class="fa-regular fa-clock me-2"></i>
+                <span class="meta-label">Start</span>
+                <span class="meta-value" data-wedding-time>4:00 PM</span>
+              </div>
+              <div class="meta-pill">
+                <i class="fa-solid fa-ring me-2"></i>
+                <span class="meta-label">Dress code</span>
+                <span class="meta-value">Semi-formal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 mt-5 mt-lg-0">
+            <div class="card glass-card p-4 p-sm-4">
+              <div class="d-flex align-items-start justify-content-between gap-3">
+                <div>
+                  <h2 class="h5 mb-1">Countdown</h2>
+                  <p class="text-secondary mb-0">We can’t wait to see you.</p>
+                </div>
+                <button type="button" class="btn btn-sm btn-outline-secondary" id="addToCalendarBtn">
+                  <i class="fa-regular fa-calendar-plus me-2"></i>Add to calendar
+                </button>
+              </div>
+
+              <div class="countdown mt-4" role="timer" aria-live="polite">
+                <div class="timebox">
+                  <div class="time" id="cdDays">—</div>
+                  <div class="label">Days</div>
+                </div>
+                <div class="timebox">
+                  <div class="time" id="cdHours">—</div>
+                  <div class="label">Hours</div>
+                </div>
+                <div class="timebox">
+                  <div class="time" id="cdMins">—</div>
+                  <div class="label">Mins</div>
+                </div>
+                <div class="timebox">
+                  <div class="time" id="cdSecs">—</div>
+                  <div class="label">Secs</div>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <div class="small">
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="text-secondary">Ceremony</span>
+                  <span class="fw-semibold" data-ceremony-time>4:00 PM</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-2">
+                  <span class="text-secondary">Reception</span>
+                  <span class="fw-semibold" data-reception-time>6:30 PM</span>
+                </div>
+              </div>
+            </div>
+            <p class="hint mt-3 mb-0">
+              Tip: Change the hero photo by swapping the filename in <span class="code">css/style.css</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Gallery -->
+      <section id="gallery" class="section">
+        <div class="container">
+          <div class="d-flex align-items-end justify-content-between gap-3 flex-wrap">
+            <div>
+              <p class="section-kicker">Our love</p>
+              <h2 class="section-title mb-2">Moments together</h2>
+              <p class="section-subtitle mb-0">
+                A few memories we love. Tap a photo to view it larger.
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery-rail mt-3" aria-label="Photo gallery carousel">
+            <div class="gallery-rail-top">
+              <div class="hint mb-0">Swipe on mobile. Use arrows on desktop.</div>
+              <div class="d-none d-md-flex gap-2">
+                <button class="btn btn-sm btn-outline-secondary" type="button" id="galleryPrev" aria-label="Scroll gallery left">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-secondary" type="button" id="galleryNext" aria-label="Scroll gallery right">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="gallery-track" id="galleryTrack">
+              <button class="polaroid" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="./images/IMG_5253.JPG" aria-label="Open photo 1">
+                <img src="./images/IMG_5253.JPG" alt="Jean and Lincy photo 1" loading="lazy" />
+              </button>
+              <button class="polaroid tilt-1" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="./images/IMG_5254.JPG" aria-label="Open photo 2">
+                <img src="./images/IMG_5254.JPG" alt="Jean and Lincy photo 2" loading="lazy" />
+              </button>
+              <button class="polaroid tilt-2" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="./images/IMG_5255.JPG" aria-label="Open photo 3">
+                <img src="./images/IMG_5255.JPG" alt="Jean and Lincy photo 3" loading="lazy" />
+              </button>
+              <button class="polaroid tilt-3" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="./images/IMG_5256.JPG" aria-label="Open photo 4">
+                <img src="./images/IMG_5256.JPG" alt="Jean and Lincy photo 4" loading="lazy" />
+              </button>
+              <button class="polaroid tilt-4" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="./images/IMG_5257.JPG" aria-label="Open photo 5">
+                <img src="./images/IMG_5257.JPG" alt="Jean and Lincy photo 5" loading="lazy" />
+              </button>
+              <button class="polaroid tilt-2" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="./images/IMG_5258.JPG" aria-label="Open photo 6">
+                <img src="./images/IMG_5258.JPG" alt="Jean and Lincy photo 6" loading="lazy" />
+              </button>
+              <button class="polaroid tilt-1" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="./images/IMG_5259.JPG" aria-label="Open photo 7">
+                <img src="./images/IMG_5259.JPG" alt="Jean and Lincy photo 7" loading="lazy" />
+              </button>
+              <button class="polaroid tilt-3" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="./images/IMG_5260.JPG" aria-label="Open photo 8">
+                <img src="./images/IMG_5260.JPG" alt="Jean and Lincy photo 8" loading="lazy" />
+              </button>
+              <button class="polaroid tilt-4" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="./images/IMG_5261.jpg" aria-label="Open photo 9">
+                <img src="./images/IMG_5261.jpg" alt="Jean and Lincy photo 9" loading="lazy" />
+              </button>
+              <button class="polaroid tilt-2" type="button" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="./images/IMG_5262.JPG" aria-label="Open photo 10">
+                <img src="./images/IMG_5262.JPG" alt="Jean and Lincy photo 10" loading="lazy" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Schedule -->
+      <section id="schedule" class="section section-alt">
+        <div class="container">
+          <div class="d-flex align-items-end justify-content-between gap-3 flex-wrap">
+            <div>
+              <p class="section-kicker">Plan the day</p>
+              <h2 class="section-title mb-2">Schedule</h2>
+              <p class="section-subtitle mb-0">A simple timeline for a smooth day.</p>
+            </div>
+          </div>
+
+          <div class="timeline mt-4">
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="content">
+                <div class="time" data-ceremony-time>4:00 PM</div>
+                <div class="title">Ceremony</div>
+                <div class="muted" data-ceremony-name>Ceremony Venue Name</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="content">
+                <div class="time">5:00 PM</div>
+                <div class="title">Photos &amp; short break</div>
+                <div class="muted">A little time to travel / refresh</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="content">
+                <div class="time" data-reception-time>6:30 PM</div>
+                <div class="title">Reception</div>
+                <div class="muted" data-reception-name>Reception Venue Name</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Locations -->
+      <section id="locations" class="section">
+        <div class="container">
+          <p class="section-kicker">Getting there</p>
+          <div class="d-flex align-items-end justify-content-between gap-3 flex-wrap">
+            <div>
+              <h2 class="section-title mb-2">Locations</h2>
+              <p class="section-subtitle mb-0">
+                Tap a card for directions or view the map.
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-3 g-lg-4 mt-3">
+            <div class="col-lg-6">
+              <div class="place-card">
+                <div class="place-top">
+                  <div>
+                    <div class="place-kicker">Ceremony</div>
+                    <h3 class="place-title mb-1" data-ceremony-name>Ceremony Venue Name</h3>
+                    <p class="place-address mb-0" data-ceremony-address>
+                      123 Ceremony St, City, Country
+                    </p>
+                  </div>
+                  <a class="btn btn-sm btn-outline-secondary" target="_blank" rel="noreferrer" id="ceremonyDirections">
+                    <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>Directions
+                  </a>
+                </div>
+
+                <div class="map-wrap mt-3">
+                  <iframe
+                    title="Ceremony map"
+                    id="ceremonyMap"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="place-card">
+                <div class="place-top">
+                  <div>
+                    <div class="place-kicker">Reception</div>
+                    <h3 class="place-title mb-1" data-reception-name>Reception Venue Name</h3>
+                    <p class="place-address mb-0" data-reception-address>
+                      456 Reception Ave, City, Country
+                    </p>
+                  </div>
+                  <a class="btn btn-sm btn-outline-secondary" target="_blank" rel="noreferrer" id="receptionDirections">
+                    <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>Directions
+                  </a>
+                </div>
+
+                <div class="map-wrap mt-3">
+                  <iframe
+                    title="Reception map"
+                    id="receptionMap"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 d-flex flex-wrap gap-2">
+            <button class="btn btn-outline-secondary" type="button" id="copyCeremonyAddress">
+              <i class="fa-regular fa-copy me-2"></i>Copy ceremony address
+            </button>
+            <button class="btn btn-outline-secondary" type="button" id="copyReceptionAddress">
+              <i class="fa-regular fa-copy me-2"></i>Copy reception address
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Photo modal -->
+    <div class="modal fade" id="photoModal" tabindex="-1" aria-hidden="true" aria-label="Photo viewer">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content photo-modal">
+          <div class="modal-header border-0 pb-0">
+            <div class="small text-secondary">Jean Johnson &amp; Lincy Merin Joy</div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-2">
+            <img id="photoModalImg" class="photo-modal-img" alt="Selected photo" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-2">
+          <div class="small text-secondary">
+            <span class="me-2">Made with love.</span>
+            <span class="text-secondary-emphasis" data-couple>Jean Johnson &amp; Lincy Merin Joy</span>
+          </div>
+          <div class="small text-secondary">
+            <a class="link-secondary" href="#top">Back to top</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
