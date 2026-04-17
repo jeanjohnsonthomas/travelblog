@@ -8,12 +8,12 @@ const WEDDING = {
   ceremony: {
     name: "Ceremony Venue Name",
     address: "Bishop Pereira Hall",
-    time: "4:00 PM",
+    time: "10:30 AM",
   },
   reception: {
     name: "Reception Venue Name",
     address: "Dilash Wedding & Events Centre Attingal Alamcode",
-    time: "6:30 PM",
+    time: "5:30 PM",
   },
 };
 
